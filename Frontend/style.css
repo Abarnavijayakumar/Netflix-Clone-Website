@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     
 }
 .main{
@@ -91,8 +92,43 @@ p{
     line-height:1.5;
 }
 span{
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight:500 ;
     line-height: 1.5;
-    margin: 12px;
+    margin-top: 12px;
+}
+.center-buttons{
+    position: relative;
+    top: 10px;
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.email-input{
+    background-color: transparent;
+    height: 9.9vh;
+    width: clamp(200px,25.4vw,500px);
+    border: 1px solid grey ;
+    border-radius: 0.25rem;
+    padding: 8px;
+    /* font-size: 1rem; */
+}
+.email-input::placeholder {
+    color: rgb(188, 184, 184); /* or any visible color */
+    font-size: 1rem;
+}
+    
+.Button-gs{
+    background-color: red;
+    color: white;
+    padding: 0 1rem;
+    border: 1px solid grey;
+    font-size:1.05rem;
+    font-weight: 500;
+    height: 9.9vh;
+    border-radius: 0.25rem;
+  
+   
 }
