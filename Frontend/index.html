@@ -47,7 +47,7 @@
     <div class="card-section">
         <h3>Trending Now</h3>
         <div class="card-wrapper">
-            <div class="scroll-btn left">
+            <div onclick= "Scrollleftbtn()"class="scroll-btn left">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24" height="24" data-icon="ChevronLeftStandard" aria-hidden="true">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.41409 12L15.707 19.2928L14.2928 20.7071L6.29277 12.7071C6.10523 12.5195 5.99988 12.2652 5.99988 12C5.99988 11.7347 6.10523 11.4804 6.29277 11.2928L14.2928 3.29285L15.707 4.70706L8.41409 12Z" fill="currentColor"></path> </svg>
             </div>
@@ -62,7 +62,7 @@
                 <div class="main-card card8"></div>
                 <div class="main-card card9"></div>
                 <div class="main-card card10"></div>
-                <div class="scroll-btn right"><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img"
+                <div onclick="Scrollrightbtn()" class="scroll-btn right"><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img"
                         viewBox="0 0 24 24" width="24" height="24" data-icon="ChevronRightStandard" aria-hidden="true">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z"
@@ -74,7 +74,49 @@
         </div>
     </div>
     </div>
+    <div class="responsive-wrapper">
+    <div class="more-reasons">
+        <h2>More reasons to join</h2>
+        <div class="info-cards">
+            <div class="info-card">
+                <h4>Enjoy on your TV</h4>
+                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+            </div>
 
+            <div class="info-card">
+                <h4>Download your shows to watch offline</h4>
+                <p>Save your favourites easily and always have something to watch.</p>
+            </div>
+
+            <div class="info-card">
+                <h4>Watch everywhere</h4>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+            </div>
+
+            <div class="info-card">
+                <h4>Create profiles for kids</h4>
+                <p>Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</p>
+            </div>
+
+        </div>
+    </div>
+    </div>
+<script>
+     function Scrollleftbtn() {
+        const container = document.querySelector(".card-container")
+         container.scrollBy({
+            left: -300,
+            behavior: "smooth"
+         });
+     }
+     function Scrollrightbtn (){
+        const container = document.querySelector('.card-container')
+        container.scrollBy({
+            left: 300,
+            behavior: "smooth"
+         });
+     }
+</script>
 </body>
 
 </html>
