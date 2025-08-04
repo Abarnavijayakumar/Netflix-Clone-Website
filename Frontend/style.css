@@ -146,6 +146,8 @@ span{
 .card-container{
     display: flex;
     gap: 10px;
+    overflow: auto;
+    scroll-behavior: smooth;
 }
 .main-card{
     width: clamp(120px,15vh,200px);
@@ -157,6 +159,34 @@ span{
     flex-shrink: 0;
 }
 .main-card:hover{
-    transform: scale(1.5);
+    transform: scale(1.02);
 }
-
+.card-wrapper{
+    position: relative;
+}
+.scroll-btn{
+    background-color: red;
+    height: 7.5vh;
+    width: 1.5vw;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.scroll-btn.left{
+    left: 0;
+}
+ .scroll-btn.right{
+    right: 0;
+ }
+ .responsive-wrapper{
+    width: clamp(400px, 80vw, 1200px); 
+    margin: 0 auto;
+ }
